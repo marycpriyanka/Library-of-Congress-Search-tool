@@ -9,13 +9,14 @@ function formSubmitHandler(event) {
     const format = userFormatInput.value.trim();
 
     if (!query) {
-
+        console.error("Search value is needed");
+        return;
     } else {
-        if (format) {
+        // if (format) {
             document.location.replace(`./search-results.html?q=${query}&format=${format}`);
-        } else {
-            document.location.replace(`./search-results.html?q=${query}&format=`);
-        }       
+        // } else {
+        //     document.location.replace(`./search-results.html?q=${query}&format=`);
+        // }       
     }
 }
 
