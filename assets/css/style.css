@@ -1,11 +1,27 @@
+:root {
+    --violet: #713FE1;
+    --gold:  #948B0C;
+    --yellow: #E0D63F;
+}
+
 body {
-    background-color: #948B0C;
+    background-color: var(--gold);
 }
 
 form {
-    background-color:#713FE1;
+    background-color: var(--violet);
 }
 
-/* button {
-    background-color: #E0D63F;
-} */
+.custom-background {
+    background-color: var(--yellow);
+    color: var(--violet);
+    font-weight: bold;
+}
+
+.custom-card {
+    background-color: var(--violet);
+}
+
+a {
+    color: var(--gold);
+}
