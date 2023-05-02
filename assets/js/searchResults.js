@@ -14,12 +14,26 @@ function getParams() {
 }
 
 function callApi(query, format) {
-    let queryUrl = `https://www.loc.gov/search/?q=${query}`;
+    let queryUrl = `https://www.loc.gov/search/?q=${query}&fo=json`;
     if (!format.startsWith("Select")) {
-        queryUrl = `https://www.loc.gov/search/?q=${query}&fo=${format}`;
+        queryUrl = `https://www.loc.gov/${format}/?q=${query}&fo=json`;
     }
+    console.log(queryUrl);
 
-
+    fetch(queryUrl)
+        .then(function (response) {
+            if (response.ok) {
+                return response.json();
+            } else {
+                console.error(response.statusText);
+            }
+        })
+        .then(function (data) {
+            console.log(data);
+        })
+        .catch(function (error) {
+            console.error(error);
+        });
 }
 
 // Event handler for Search button
