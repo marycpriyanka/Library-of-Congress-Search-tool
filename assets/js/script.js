@@ -12,16 +12,11 @@ function formSubmitHandler(event) {
         console.error("Search value is needed");
         return;
     } else {
-        // if (format) {
-            document.location.replace(`./search-results.html?q=${query}&format=${format}`);
-        // } else {
-        //     document.location.replace(`./search-results.html?q=${query}&format=`);
-        // }       
+        document.location.replace(`./search-results.html?q=${query}&format=${format}`);
     }
 }
 
 searchForm.addEventListener("submit", formSubmitHandler);
 
-// queryUrl = `https://www.loc.gov/search/?q=${query}&fo=${format}`;
-// queryUrl = `https://www.loc.gov/search/?q=${query}`;
+
 

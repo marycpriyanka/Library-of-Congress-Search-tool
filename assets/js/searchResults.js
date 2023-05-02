@@ -14,6 +14,11 @@ function getParams() {
 }
 
 function callApi(query, format) {
+    let queryUrl = `https://www.loc.gov/search/?q=${query}`;
+    if (!format.startsWith("Select")) {
+        queryUrl = `https://www.loc.gov/search/?q=${query}&fo=${format}`;
+    }
+
 
 }
 
