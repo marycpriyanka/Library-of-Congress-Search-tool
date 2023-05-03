@@ -3,6 +3,7 @@ const userSearchInput = document.getElementById("searchInput");
 const userFormatInput = document.getElementById("formatInput");
 const backButton = document.getElementById("backButton");
 const resultSection = document.getElementById("result");
+const resultsHeader = document.getElementById("results-heading");
 
 function getParams() {
     const queryParameters = document.location.search.split("&");
@@ -25,6 +26,7 @@ function formSubmitHandler(event) {
         console.error("Search value is needed");
         return;
     } else {
+        resultSection.innerHTML = "";
         callApi(query, format) ;
     }
 } 
@@ -50,7 +52,12 @@ function callApi(query, format) {
         })
         .then(function (data) {
             console.log(data);
-            displayResults(data.results);
+            if (data.results.length) {
+                resultsHeader.textContent = "Showing results for " + query;
+                displayResults(data.results);
+            } else {
+                resultsHeader.textContent = "No results to display";
+            }
         })
         .catch(function (error) {
             console.error(error);
@@ -100,6 +107,4 @@ searchForm.addEventListener("submit", formSubmitHandler);
 backButton.addEventListener("click", goBack);
 
 getParams();
-
-// \nSubjects: ${subjects.foreach(subject => subject)}
 
