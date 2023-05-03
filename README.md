@@ -11,6 +11,7 @@ Library of Congress Search Tool is an application that searches and displays res
 - [Usage](#usage)
 - [Technologies used](#technologies-used)
 - [License](#license)
+- [Deployed link](#deployed-link)
 - [How to Contribute](#how-to-contribute)
 - [Questions](#questions)
 
