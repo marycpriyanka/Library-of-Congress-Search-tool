@@ -12,12 +12,14 @@ Library of Congress Search Tool is an application that searches and displays res
 - [Technologies used](#technologies-used)
 - [License](#license)
 - [How to Contribute](#how-to-contribute)
-- [Tests](#tests)
 - [Questions](#questions)
 
 ## Installation
 
 This program can be run through a browser using the link to the deployed application. Alternatively, to run this application locally you will need to:
+
+- Clone this repository to receive all of the files.
+- Open the index.html file in your default browser.
 
 ## Usage
 
@@ -25,7 +27,7 @@ This program can be run through a browser using the link to the deployed applica
 
 ##  Technologies used
 
-HTML, CSS, Bootstrap, JavaScript, Ajax, Responsive Design,  Library of Congress API
+HTML, CSS, Bootstrap, JavaScript, Ajax, Responsive Design, Library of Congress API
 
 ## License
 
@@ -35,9 +37,7 @@ Library of Congress Search Tool is available under the MIT License.
 
 Contributions and ideas are welcome. Before submitting an issue, please take a moment to look over the contributing guidelines in https://www.contributor-covenant.org/ . Before submitting pull requests, ensure the following:
 
-## Tests
-
-
+Fork the repo and create your branch from develop. Test your code.
 
 ## Questions
 
