@@ -27,12 +27,12 @@ This program can be run through a browser using the link to the deployed applica
 When the user submits a search query from the application to request data, they receives a response from the Library of Congress.
 The user can either perform a generic search for data in all formats or I can select a format in the form to help filter results.
 
-
+![HomePage](https://github.com/marycpriyanka/Library-of-Congress-Search-tool/blob/main/assets/images/screenshots/Homepage.png)
 
 The user can see all of the results of their search displayed on a separate page.
 The user can conduct additional searches from the results page as well.
 
-
+![ResultsPage](https://github.com/marycpriyanka/Library-of-Congress-Search-tool/blob/main/assets/images/screenshots/resultsPage.png)
 
 ##  Technologies used
 
