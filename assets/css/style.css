@@ -6,6 +6,7 @@
 
 body {
     background-color: var(--gold);
+    font-family: 'Ubuntu', sans-serif;
 }
 
 form {
